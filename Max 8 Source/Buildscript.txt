@@ -1,0 +1,5 @@
+open thispatcher
+folder "location your folder here/Max 8 Source" 
+appicon "for Windows use the location of your appicon here/TGrainerIcon.ico" 
+OR 
+appicon "for MacOS use the location of your appicon here/TGrainerIcon.icns" 
