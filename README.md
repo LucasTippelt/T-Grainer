@@ -1,7 +1,6 @@
 **About**
 
-This project consists of an arduino-based hardware controller which controls a granular synthesizer. ***You may choose to use the software without the hardware controller 
-("L-Grainer" Version).***
+This project consists of an arduino-based hardware controller which controls a granular synthesizer. ***You may choose to use the software without the hardware controller (default on startup).***
 
 **How to use**
 
@@ -12,7 +11,7 @@ This project consists of an arduino-based hardware controller which controls a g
 - select your grain
 - the ***sequencer*** is 2 bars in 1/8 notes
 - to ***toggle the sequencer*** use this button ![image](https://user-images.githubusercontent.com/93798450/154749271-eeb6afb4-bf1b-4cf9-a7e9-ac53ddcfb1bb.png)
-- the small button (next to "Sequencer" text in L-Grainer, next to the sequencer toggle in T-Grainer) is only to make the current beat visible, the sequencer will still work if it's not pressed
+- the small button (next to "Sequencer" text in L-Grainer) is only to make the current beat visible, the sequencer will still work if it's not pressed
 - if you zoom in far enough on a waveform, it shows you the length of a 1/4 note in your currently selected bpm
 - if you select "change LFO scales" in the "Version" menu bar, you can change how much the LFOs should affect each effect (values between 0.1 and 1.5 are advised)
 to permanently save your changes edit the value in one of these objects and save ![image](https://user-images.githubusercontent.com/93798450/154543253-67be026f-e74d-4336-a913-e513f01213c0.png)
@@ -34,15 +33,20 @@ to permanently save your changes edit the value in one of these objects and save
 
 All the code in the Arduino and Max folder in this project are released under ***GPL v3***. The USB-MIDI-firmware for the Arduino has been modified and compiled from https://github.com/ddiakopoulos/hiduino and inherits the ***MIT License*** from that project. 
 
-The ***software*** was developed by Lucas Tippelt.
+The software was developed by Lucas Tippelt.
 
-The ***hardware*** was designed and build by Valentin Vankann, Kristian Hammer and Pierre Kirchhoff.
+The hardware was designed and build by Valentin Vankann, Kristian Hammer and Pierre Kirchhoff.
 
-The ***UI*** was designed by Valentin Vankann.
+The UI was designed by Valentin Vankann.
 
-The ***product video*** was made by **Kristian Hammer, Pierre Kirchhoff, Luca Meyer, Li-Yue Kwok and Sinan Kleb**.
+The product video was made by Kristian Hammer, Pierre Kirchhoff, Luca Meyer, Li-Yue Kwok and Sinan Kleb.
 
+**Workaround for Linux**
 
+There is no native Version for Linux now, however its possible to run the TGrainer in Wine, this is my working configuration in Lutris. Obviously you'll have to move the files into the wine directory. ![image](https://user-images.githubusercontent.com/99901362/156372893-39c5e768-94a2-4293-8d77-80e3e0fc6f60.png)
 
+known Issues: 
+the max runtime enviroment running in Wine can't parse .mp3 files (at least for me), however most other file types like .wav work fine 
+you might have to fiddle with the audio driver in the options menu to get an high quality experience (directsound seemed to work best with my portaudio linux driver)
 
 
