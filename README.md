@@ -31,7 +31,7 @@ to permanently save your changes edit the value in one of these objects and save
 
 **License & Credits**
 
-All the code in the Arduino and Max folder in this project are released under ***GPL v3***. The USB-MIDI-firmware for the Arduino has been modified and compiled from https://github.com/ddiakopoulos/hiduino and inherits the ***MIT License*** from that project. 
+All the code in this project is released under ***GPL v3***. 
 
 The software was developed by Lucas Tippelt.
 
